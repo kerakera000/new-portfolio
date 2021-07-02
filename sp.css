@@ -1,0 +1,74 @@
+@media screen and (max-width: 768px) {
+  header {
+    height: 180vw;
+  }
+  header .header-background-image-container {
+    width: 125%;
+    height: 240vw;
+    -webkit-transform: translateY(-15vw) rotate(20deg);
+            transform: translateY(-15vw) rotate(20deg);
+  }
+  header .header-background-image-container .header-img-box-pc1 {
+    width: 60vw;
+    -webkit-transform: translateY(-180vw);
+            transform: translateY(-180vw);
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+  }
+  header .header-background-image-container .header-img-box-pc1 .header-image-pc {
+    height: 35vw;
+    background-color: chocolate;
+    margin: 12vw 0;
+  }
+  header .header-background-image-container .header-img-box-sp1 {
+    width: 26vw;
+    margin: 0 6vw;
+    -webkit-transform: translateY(180vw);
+            transform: translateY(180vw);
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    padding: 0%;
+  }
+  header .header-background-image-container .header-img-box-sp1 .header-image-sp {
+    height: 42vw;
+    width: 100%;
+    background-color: chocolate;
+    margin: 9vw 0;
+  }
+  header .header-background-image-container .header-img-box-pc2 {
+    display: none;
+  }
+  header .header-background-image-container .H-IMG-toggle1 {
+    -webkit-transform: translateY(0vw);
+            transform: translateY(0vw);
+  }
+  header .header-background-image-container .H-IMG-toggle2 {
+    -webkit-transform: translateY(0vw);
+            transform: translateY(0vw);
+  }
+  header .header-background-image-container .H-IMG-toggle3 {
+    -webkit-transform: translateY(0vw);
+            transform: translateY(0vw);
+  }
+  header .header-title-nav-box .header-title {
+    font-size: 12vw;
+    top: 28vw;
+    left: 7vw;
+    width: 65vw;
+  }
+  header .header-title-nav-box .nav {
+    top: 65vw;
+    left: 8vw;
+  }
+  header .header-title-nav-box .nav ul li {
+    padding: 3vw 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    font-size: 8vw;
+  }
+  header .header-title-nav-box .nav ul li:hover {
+    text-decoration: none;
+    font-size: 8vw;
+  }
+}
+/*# sourceMappingURL=sp.css.map */
