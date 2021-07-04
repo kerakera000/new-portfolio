@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 header {
   height: 55vw;
 }
@@ -109,13 +113,65 @@ header .header-title-nav-box .nav ul {
 header .header-title-nav-box .nav ul li {
   padding: 1vw 0;
   cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   font-size: 3vw;
 }
 
-header .header-title-nav-box .nav ul li:hover {
+header .header-title-nav-box .nav ul li a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .header-title-nav-box .nav ul li a:hover {
   text-decoration: underline;
   font-size: 3.4vw;
+}
+
+#go-top {
+  position: fixed;
+  width: 3vw;
+  height: 3vw;
+  z-index: 99;
+  right: 2%;
+  bottom: 2%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateY(15vw);
+          transform: translateY(15vw);
+  color: black;
+}
+
+#go-top .go-top-img {
+  width: 100%;
+  height: 100%;
+}
+
+.visible-gotop {
+  -webkit-transform: translateY(0vw) !important;
+          transform: translateY(0vw) !important;
+}
+
+#section1 h2 {
+  font-size: 3vw;
+  opacity: 0;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#section1 .is-show {
+  opacity: 1 !important;
+}
+
+#section2 h2 {
+  font-size: 3vw;
+}
+
+#section3 h2 {
+  font-size: 3vw;
+}
+
+#section4 h2 {
+  font-size: 3vw;
 }
 /*# sourceMappingURL=main.css.map */
