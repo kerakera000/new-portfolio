@@ -112,12 +112,88 @@ header{
         height: 100%;
         z-index: 2;
         background-color: rgba(0, 0, 0, 0.411);
-        .header-title{
+        .title {
+            display: flex;
+            overflow: hidden;
+            color: white;
             font-size: 5vw;
             position: absolute;
             top: 13vw;
             left: 24vw;
+            span {
+                display: block;
+                transform: translate(0, 105%);
+                transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+                &:nth-child(2) {
+                    transition-delay: 0.06s;
+                }
+                &:nth-child(3) {
+                    transition-delay: 0.12s;
+                }
+                &:nth-child(4) {
+                    transition-delay: 0.18s;
+                }
+                &:nth-child(5) {
+                    transition-delay: 0.24s;
+                }
+                &:nth-child(6) {
+                    transition-delay: 0.30s;
+                }
+                &:nth-child(7) {
+                    transition-delay: 0.36s;
+                }
+                &:nth-child(8) {
+                    transition-delay: 0.42s;
+                }
+                &:nth-child(9) {
+                    transition-delay: 0.48s;
+                }
+                &:nth-child(10) {
+                    transition-delay: 0.54s;
+                }
+                &:nth-child(11) {
+                    transition-delay: 0.6s;
+                }
+                &:nth-child(12) {
+                    transition-delay: 0.66s;
+                }
+                &:nth-child(13) {
+                    transition-delay: 0.72s;
+                }
+                &:nth-child(15) {
+                    transition-delay: 0.78s;
+                }  
+                &:nth-child(16) {
+                    transition-delay: 0.84s;
+                }  
+                &:nth-child(17) {
+                    transition-delay: 0.90s;
+                }  
+                &:nth-child(18) {
+                    transition-delay: 0.96s;
+                }  
+                &:nth-child(19) {
+                    transition-delay: 1.02s;
+                }  
+                &:nth-child(20) {
+                    transition-delay: 1.08s;
+                }  
+                &:nth-child(21) {
+                    transition-delay: 1.14s;
+                }  
+                &:nth-child(22) {
+                    transition-delay: 1.20s;
+                }  
+                &:nth-child(23) {
+                    transition-delay: 1.26s;
+                }  
+            }
         }
+        .visible{
+            span{
+                transform: translate(0, 0);
+            }
+        }      
         .nav{
             position: absolute;
             top: 21vw;
@@ -128,6 +204,7 @@ header{
                     padding: 1vw 0;
                     cursor: pointer;
                     font-size: 3vw;
+                    transform: translateX(-50vw);
                     a{
                         color: white;
                         text-decoration: none;
@@ -137,6 +214,21 @@ header{
                             font-size: 3.4vw;
                         }
                     }
+                }
+                #nav0{
+                    transition: all 0.3s;
+                }
+                #nav1{
+                    transition: all 0.6s;
+                }
+                #nav2{
+                    transition: all 0.9s;
+                }
+                #nav3{
+                    transition: all 1.2s;
+                }
+                .nav-link{
+                    transform: translateX(0vw);
                 }
             }
         }
@@ -176,24 +268,30 @@ header{
 #section2{
     h2{
         font-size: 3vw;
-        .is-show{
-            
-        }
+        opacity: 0;
+        transition: all 2s;
+    }
+    .is-show{
+        opacity: 1 !important;
     }
 }
 #section3{
     h2{
         font-size: 3vw;
-        .is-show{
-            
-        }
+        opacity: 0;
+        transition: all 2s;
+    }
+    .is-show{
+        opacity: 1 !important;
     }
 }
 #section4{
     h2{
         font-size: 3vw;
-        .is-show{
-            
-        }
+        opacity: 0;
+        transition: all 2s;
+    }
+    .is-show{
+        opacity: 1 !important;
     }
 }

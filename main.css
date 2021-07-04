@@ -93,11 +93,136 @@ header .header-title-nav-box {
   background-color: rgba(0, 0, 0, 0.411);
 }
 
-header .header-title-nav-box .header-title {
+header .header-title-nav-box .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  color: white;
   font-size: 5vw;
   position: absolute;
   top: 13vw;
   left: 24vw;
+}
+
+header .header-title-nav-box .title span {
+  display: block;
+  -webkit-transform: translate(0, 105%);
+          transform: translate(0, 105%);
+  -webkit-transition: -webkit-transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: -webkit-transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s, -webkit-transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+header .header-title-nav-box .title span:nth-child(2) {
+  -webkit-transition-delay: 0.06s;
+          transition-delay: 0.06s;
+}
+
+header .header-title-nav-box .title span:nth-child(3) {
+  -webkit-transition-delay: 0.12s;
+          transition-delay: 0.12s;
+}
+
+header .header-title-nav-box .title span:nth-child(4) {
+  -webkit-transition-delay: 0.18s;
+          transition-delay: 0.18s;
+}
+
+header .header-title-nav-box .title span:nth-child(5) {
+  -webkit-transition-delay: 0.24s;
+          transition-delay: 0.24s;
+}
+
+header .header-title-nav-box .title span:nth-child(6) {
+  -webkit-transition-delay: 0.30s;
+          transition-delay: 0.30s;
+}
+
+header .header-title-nav-box .title span:nth-child(7) {
+  -webkit-transition-delay: 0.36s;
+          transition-delay: 0.36s;
+}
+
+header .header-title-nav-box .title span:nth-child(8) {
+  -webkit-transition-delay: 0.42s;
+          transition-delay: 0.42s;
+}
+
+header .header-title-nav-box .title span:nth-child(9) {
+  -webkit-transition-delay: 0.48s;
+          transition-delay: 0.48s;
+}
+
+header .header-title-nav-box .title span:nth-child(10) {
+  -webkit-transition-delay: 0.54s;
+          transition-delay: 0.54s;
+}
+
+header .header-title-nav-box .title span:nth-child(11) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+header .header-title-nav-box .title span:nth-child(12) {
+  -webkit-transition-delay: 0.66s;
+          transition-delay: 0.66s;
+}
+
+header .header-title-nav-box .title span:nth-child(13) {
+  -webkit-transition-delay: 0.72s;
+          transition-delay: 0.72s;
+}
+
+header .header-title-nav-box .title span:nth-child(15) {
+  -webkit-transition-delay: 0.78s;
+          transition-delay: 0.78s;
+}
+
+header .header-title-nav-box .title span:nth-child(16) {
+  -webkit-transition-delay: 0.84s;
+          transition-delay: 0.84s;
+}
+
+header .header-title-nav-box .title span:nth-child(17) {
+  -webkit-transition-delay: 0.90s;
+          transition-delay: 0.90s;
+}
+
+header .header-title-nav-box .title span:nth-child(18) {
+  -webkit-transition-delay: 0.96s;
+          transition-delay: 0.96s;
+}
+
+header .header-title-nav-box .title span:nth-child(19) {
+  -webkit-transition-delay: 1.02s;
+          transition-delay: 1.02s;
+}
+
+header .header-title-nav-box .title span:nth-child(20) {
+  -webkit-transition-delay: 1.08s;
+          transition-delay: 1.08s;
+}
+
+header .header-title-nav-box .title span:nth-child(21) {
+  -webkit-transition-delay: 1.14s;
+          transition-delay: 1.14s;
+}
+
+header .header-title-nav-box .title span:nth-child(22) {
+  -webkit-transition-delay: 1.20s;
+          transition-delay: 1.20s;
+}
+
+header .header-title-nav-box .title span:nth-child(23) {
+  -webkit-transition-delay: 1.26s;
+          transition-delay: 1.26s;
+}
+
+header .header-title-nav-box .visible span {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 header .header-title-nav-box .nav {
@@ -114,6 +239,8 @@ header .header-title-nav-box .nav ul li {
   padding: 1vw 0;
   cursor: pointer;
   font-size: 3vw;
+  -webkit-transform: translateX(-50vw);
+          transform: translateX(-50vw);
 }
 
 header .header-title-nav-box .nav ul li a {
@@ -126,6 +253,31 @@ header .header-title-nav-box .nav ul li a {
 header .header-title-nav-box .nav ul li a:hover {
   text-decoration: underline;
   font-size: 3.4vw;
+}
+
+header .header-title-nav-box .nav ul #nav0 {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .header-title-nav-box .nav ul #nav1 {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+header .header-title-nav-box .nav ul #nav2 {
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+header .header-title-nav-box .nav ul #nav3 {
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+
+header .header-title-nav-box .nav ul .nav-link {
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
 }
 
 #go-top {
@@ -165,13 +317,34 @@ header .header-title-nav-box .nav ul li a:hover {
 
 #section2 h2 {
   font-size: 3vw;
+  opacity: 0;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#section2 .is-show {
+  opacity: 1 !important;
 }
 
 #section3 h2 {
   font-size: 3vw;
+  opacity: 0;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#section3 .is-show {
+  opacity: 1 !important;
 }
 
 #section4 h2 {
   font-size: 3vw;
+  opacity: 0;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#section4 .is-show {
+  opacity: 1 !important;
 }
 /*# sourceMappingURL=main.css.map */

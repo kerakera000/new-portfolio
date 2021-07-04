@@ -50,11 +50,16 @@
     -webkit-transform: translateY(0vw);
             transform: translateY(0vw);
   }
-  header .header-title-nav-box .header-title {
-    font-size: 12vw;
-    top: 28vw;
-    left: 7vw;
-    width: 65vw;
+  header .header-title-nav-box .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    color: white;
+    font-size: 8.2vw;
+    top: 38vw;
+    left: 4vw;
   }
   header .header-title-nav-box .nav {
     top: 65vw;
@@ -64,6 +69,8 @@
     padding: 3vw 0;
     -webkit-transition: 0.2s;
     transition: 0.2s;
+    -webkit-transform: translateX(-80vw);
+            transform: translateX(-80vw);
   }
   header .header-title-nav-box .nav ul li a {
     font-size: 8vw;
