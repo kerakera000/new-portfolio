@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+@font-face{
+    font-family:'honokamaru' ;
+    src: url('../font/honokamaru.ttf') format('truetype');
+}
+@font-face{
+    font-family:'honokamaru' ;
+    src: url('./font/Butler_Bold.ttf') format('truetype');
+}
+
 @media screen and (max-width: 768px) {
     header{
         height: 180vw;
@@ -45,17 +54,17 @@
         }
 
         .header-title-nav-box{
-            .title {
+            #title {
                 display: flex;
                 overflow-wrap: break-word;
                 overflow: hidden;
                 color: white;
-                font-size: 8.2vw;
-                top: 38vw;
-                left: 4vw;
+                font-size: 8vw;
+                top: 33vw;
+                left: 3vw;
             }
             .nav{
-                top: 65vw;
+                top: 60vw;
                 left: 8vw;
                 ul{
                     li{
@@ -63,7 +72,7 @@
                         transition: 0.2s;
                         transform: translateX(-80vw);
                         a{
-                            font-size: 8vw;
+                            font-size: 7vw;
                             &:hover{
                                 text-decoration: none;
                                 font-size: 8vw;
@@ -89,6 +98,93 @@
         }
     }
 
+    #section1{
+        background-color: bisque;
+        height: 190vw;
+        h2{
+            font-size: 8vw;
+            opacity: 0;
+            transition: all 2s;
+            padding: 2vw 0 0 0;
+        }
+        .is-show{
+            opacity: 1 !important;
+        }
+        #section1-row-box{
+            height: 165vw;
+        }
+        .section1-paddingbox1{
+            display: none;
+        }
+        .section1-img-box{
+            position: absolute;
+            width: 80%;
+            height: 55vw;
+            background-color: rgb(145, 192, 192);
+            top: 16vw ;
+            right: 6vw ;
+            z-index: 2;
+            transition: all 0.5s;
+            padding: 2vw;
+            .section1-img{
+                object-fit: cover;
+                background: url(./img/section1-video.MP4);
+                background-position: center 26%;
+                background-size: cover;
+                background-repeat:  no-repeat;
+                width: 100%;
+                height: 100%;
+                filter: grayscale(40%);
+            }
+        }
+        .section1-text-box{
+            position: absolute;
+            width: 80%;
+            height: 55vw;
+            background-color: rgb(125, 131, 131);
+            top: 6vw;
+            left: 4vw;
+            z-index: 2;
+            transition: all 0.5s;
+            padding: 2vw;
+            .section1-text{
+                font-size: 4vw;
+            }
+        }
+        .section1-img-Shadow1{
+            position: absolute;
+            width: 80%;
+            height: 55vw;
+            background-color: black;
+            top: 18vw;
+            right: 4vw;
+            z-index: 1;
+        }
+        .section1-Shadow2{
+            position: absolute;
+            width: 80%;
+            height: 55vw;
+            background-color: black;
+            top: 8vw;
+            left: 6vw;
+            z-index: 1;
+        }
+    }
+#section2{
+    h2{
+        font-size: 8vw;
+    }
+}
+#section3{
+    h2{
+        font-size: 8vw;
+    }
+}
+#section4{
+    h2{
+        font-size: 8vw;
+    }
+}
 
 
 

@@ -1,6 +1,18 @@
 @charset "utf-8";
+
+@font-face{
+    font-family:'honokamaru' ;
+    src: url('../font/honokamaru.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:'Butler_Bold' ;
+    src: url('./font/Butler_Bold.ttf') format('truetype');
+}
+
 body{
     position: relative;
+    font-family:'Butler_Bold' ;
 }
 header{
     height: 55vw;
@@ -14,6 +26,7 @@ header{
     .header-img-box-pc1{
         height: 120%;
         width: 35vw;
+        opacity: 0;
         transform: translateY(-100vw);
         transition: 1s;
         transition-timing-function : ease-in-out;
@@ -43,6 +56,7 @@ header{
         height: 110%;
         width: 18vw;
         margin: 0 3vw;
+        opacity: 0;
         transform: translateY(80vw);
         transition: 1s;
         transition-timing-function : ease-in-out;
@@ -71,6 +85,7 @@ header{
     .header-img-box-pc2{
         height: 100%;
         width: 35vw;
+        opacity: 0;
         transform: translateY(-70vw);
         transition: 1s;
         transition-timing-function : ease-in-out;
@@ -97,12 +112,15 @@ header{
         }
     }
         .H-IMG-toggle1{
+            opacity: 1;
             transform: translateY(0vw);
         }
         .H-IMG-toggle2{
+            opacity: 1;
             transform: translateY(0vw);
         }
         .H-IMG-toggle3{
+            opacity: 1;
             transform: translateY(0vw);
         }
     }
@@ -111,15 +129,15 @@ header{
         width: 100%;
         height: 100%;
         z-index: 2;
-        background-color: rgba(0, 0, 0, 0.411);
-        .title {
+        background-color: rgba(0, 0, 0, 0.829);
+        #title {
             display: flex;
             overflow: hidden;
             color: white;
             font-size: 5vw;
             position: absolute;
             top: 13vw;
-            left: 24vw;
+            left: 22vw;
             span {
                 display: block;
                 transform: translate(0, 105%);
@@ -189,9 +207,9 @@ header{
                 }  
             }
         }
-        .visible{
+        .visible-title{
             span{
-                transform: translate(0, 0);
+                transform: translate(0, 0) !important;
             }
         }      
         .nav{
@@ -203,7 +221,7 @@ header{
                 li{
                     padding: 1vw 0;
                     cursor: pointer;
-                    font-size: 3vw;
+                    font-size: 2.5vw;
                     transform: translateX(-50vw);
                     a{
                         color: white;
@@ -211,7 +229,7 @@ header{
                         transition: 0.2s;
                         &:hover{
                             text-decoration: underline;
-                            font-size: 3.4vw;
+                            font-size: 3vw;
                         }
                     }
                 }
@@ -256,19 +274,80 @@ header{
 }
 
 #section1{
+    background-color: bisque;
+    height: 57vw;
     h2{
         font-size: 3vw;
         opacity: 0;
         transition: all 2s;
+        padding: 2vw 0 0 0;
     }
     .is-show{
         opacity: 1 !important;
     }
+    #section1-row-box{
+        height: 47vw;
+    }
+    .section1-img-box{
+        position: absolute;
+        width: 80%;
+        height: 20vw;
+        background-color: rgb(145, 192, 192);
+        top: 7vw ;
+        right: 5vw ;
+        z-index: 2;
+        transition: all 0.5s;
+        padding: 0.5vw;
+        .section1-img{
+            object-fit: cover;
+            background: url(./img/section1-video.MP4);
+            background-position: center 26%;
+            background-size: cover;
+            background-repeat:  no-repeat;
+            width: 100%;
+            height: 100%;
+            filter: grayscale(40%);
+        }
+    }
+    .section1-text-box{
+        position: absolute;
+        width: 80%;
+        height: 20vw;
+        background-color: rgb(125, 131, 131);
+        top: 7vw;
+        left: 5vw;
+        z-index: 2;
+        transition: all 0.5s;
+        padding: 1.5vw;
+        .section1-text{
+            font-size: 1.2vw;
+        }
+    }
+    .section1-img-Shadow1{
+        position: absolute;
+        width: 80%;
+        height: 20vw;
+        background-color: black;
+        top: 8vw;
+        right: 4vw;
+        z-index: 1;
+    }
+    .section1-Shadow2{
+        position: absolute;
+        width: 80%;
+        height: 20vw;
+        background-color: black;
+        top: 8vw;
+        left: 6vw;
+        z-index: 1;
+    }
 }
 #section2{
+    height: 57vw;
     h2{
         font-size: 3vw;
         opacity: 0;
+        padding: 2vw 0 0 0;
         transition: all 2s;
     }
     .is-show{
@@ -276,9 +355,11 @@ header{
     }
 }
 #section3{
+    height: 57vw;
     h2{
         font-size: 3vw;
         opacity: 0;
+        padding: 2vw 0 0 0;
         transition: all 2s;
     }
     .is-show{
@@ -286,9 +367,11 @@ header{
     }
 }
 #section4{
+    height: 57vw;
     h2{
         font-size: 3vw;
         opacity: 0;
+        padding: 2vw 0 0 0;
         transition: all 2s;
     }
     .is-show{
